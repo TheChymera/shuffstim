@@ -4,6 +4,10 @@ __author__ = 'Horea Christian'
 import numpy as np
 
 def australian(deck_size=52):
+    '''
+    Based on the formula from Sullivan and Beatty 2012 DOI: 10.4236/ojdm.2012.24027   
+    '''
+    
     from math import log
     deck = 2*(deck_size - 2**(int(log(deck_size,2))))
     if deck == 0:
