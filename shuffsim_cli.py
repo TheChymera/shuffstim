@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("shuffle", help="Shuffle type to use, we currently support the following types of shuffles: "+', '.join([a[0] for a in all_functions])+".", type=str)
 parser.add_argument("-d", "--deck-size", help="Specify the number of files in the deck.", default=52, type=int)
 parser.add_argument("-t", "--tasmanian-down-number", help="Specify the number of files in the deck.", type=int)
-parser.add_argument("-f", "--force-simulation", help="Do NOT use formulaic solutions (even when they are present), force actual simulation", action="store_true")
+parser.add_argument("-f", "--force-simulation", help="Do NOT use formulaic solutions (even when they are present), force actual simulation.", action="store_true")
 args = parser.parse_args()
 
 if args.shuffle == "tasmanian" and args.tasmanian_down_number is None:
@@ -29,4 +29,4 @@ else:
     else:
         result = getattr(shuffles, args.shuffle)(deck_size=args.deck_size)
 
-print(result)
+print("The remaining card after the "+args.shuffle.capitalize()+" shuffle will be the "+str(result)+"th in the original deck configuration.")
