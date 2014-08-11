@@ -32,7 +32,7 @@ optional arguments:
                         Specify the number of files in the deck.
   -f, --force-simulation
                         Do NOT use formulaic solutions (even when they are
-                        present), force actual simulation
+                        present), force actual simulation.
 ```
 
 Released under the GPLv3 license.
