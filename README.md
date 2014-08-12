@@ -22,7 +22,8 @@ python shuffsim_cli.py -d 50 australian
 ```
 positional arguments:
   shuffle               Shuffle type to use, we currently support the
-                        following types of shuffles: australian, tasmanian.
+                        following types of shuffles: australian, tasmanian,
+                        texas.
 
 optional arguments:
   -h, --help            show this help message and exit
