@@ -29,4 +29,13 @@ else:
     else:
         result = getattr(shuffles, args.shuffle)(deck_size=args.deck_size)
 
-print("The remaining card after the "+args.shuffle.capitalize()+" shuffle will be the "+str(result)+"th in the original deck configuration.")
+if result == 1:
+    numeral_ending = "st"
+elif result == 2:
+    numeral_ending = "nd"
+elif result == 3:
+    numeral_ending = "rd"
+else:
+    numeral_ending = "th"
+
+print("The remaining card after the specified "+args.shuffle.capitalize()+" shuffle will be the "+str(result)+numeral_ending+" in the original deck configuration.")
