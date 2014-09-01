@@ -4,6 +4,9 @@ This is a script suite allowing you to simulate (at present only deterministic) 
 
 We currently include code to simulate the Australian and Tasmanian shuffles (see [this paper for reference](http://www.scirp.org/journal/PaperInformation.aspx?PaperID=24163#.U-gXe_Ztgck)).
 
+##Dependencies
+
+* **[NumPy](https://en.wikipedia.org/wiki/Numpy)** - in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as **app-text/texlive**
 
 ##Usage
 From the containing folder:
